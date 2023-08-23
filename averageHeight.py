@@ -6,7 +6,22 @@ for n in range(0, len(student_heights)):
 
 
 #Write your code below this row 👇
-print(student_heights)
+
+avrageHeight = 0   
+numberOfStudents = 0
 
 
 
+for height in student_heights :
+  avrageHeight += height
+  numberOfStudents += 1
+
+
+
+
+avrageHeight /= numberOfStudents
+
+roundNumber = round(avrageHeight,0)
+
+roundNumber= str(roundNumber)
+print(roundNumber[0]+roundNumber[1]+ roundNumber[2])
