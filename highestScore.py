@@ -6,16 +6,32 @@ print(student_scores)
 # 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇
+sequence = 0
 print(student_scores)
 
 lenghtOflist = 0
 
-for i in student_scores:
-  currentMax =0
+for x in student_scores :
+  lenghtOflist += 1
+
+print(lenghtOflist)  
+
+def maxFuction(*args):
+   
+  if lenghtOflist ==1:
+     sequence = args[0]
+  else :
+    sequence = args
+ 
+   
+largest = sequence[0]  
+
+for item in sequence:
+ if  item > largest:
+   largest = item
+
+return largest
+
+number = 
   
-  if student_scores[currentMax] < student_scores[i] :
-    hightest  =   student_scores[i]
-currentMax = +1
-
-
-print(hightest)
+  
