@@ -16,15 +16,34 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 randomLeters = []
+passWord = []
+passWord2 = ""
 
-randomStart = random.randint(0,abs((26-nr_letters)))
-print(randomStart)
+# randomStart = random.randint(0,abs((26-nr_letters)))
+# print(randomStart)
 
-randomEnd = (randomStart+nr_letters)
 
-for vloume in range(randomStart, ):
-    randomLeters.append(letters[vloume])
 
-print(randomLeters)
+for volume in range(0,nr_letters):
+ randomLeters.append(letters [random.randint(0,len(letters)-1)])
 
-print(letters[-18])
+
+for volume in range(0,nr_numbers):
+ randomLeters.append(numbers [random.randint(0,len(numbers)-1)])
+
+
+for volume in range(0,nr_symbols):
+ randomLeters.append(symbols [random.randint(0,len(symbols)-1)])
+
+numberOfLetters= len(randomLeters)
+
+for c in range(0,numberOfLetters):
+ passWord.append(randomLeters[random.randint(0,len(randomLeters)-1)])
+
+for character in passWord:
+ passWord2 += character
+
+
+# print(len(letters))
+# print(randomLeters)
+print(passWord2)
